@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        ul{
+list-style-image: url("star.png")
+    }
+    ul#plus{
+        list-style-image: url("plus.png");
+    }
+    table{
+        width: 500px;
+        border: 1px solid black;
+        border-spacing: 0px;
+        border-bottom: 2px solid black;
+    }
+    td,th{
+    padding:5px;
+    text-align: left;
+    }
+    th{
+        border: 1px solid black;
+        background-color: rgb(144, 180,214);
+    font-weight: bold;
+    color:white;
+    }
+    td{
+        background-color: rgb(224, 233,240);
+        border-top:1px solid rgb(196, 193, 193);      
+        border-left:1px solid black;
+        border-right: 1px solid black;
+    }
+    legend{
+        font-style: italic;
+    }
+.main{
+    margin:40px;
+}
+.arrange{
+    float: left;
+    padding-right: 40px;
+    width: 150px;
+}
+
+#button{
+    color: white;
+    background-color: rgb(0,153,102);
+    border: 1px groove black;
+    margin:10px;
+    border-radius: 50px 50px;
+    float: right;
+    width: 100px;
+    text-align: center;
+}
+#form{
+    width: 500px;
+}
+div{
+    margin:15px;
+}   
+#username{
+background-image: url("plus.png");
+}
+#email{
+    background-image: url("email.png");
+}
+input{
+    border-radius: 2px ;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-position: 8px 9px;
+    padding:6px 5px 10px 10px;
+}
+select{
+    padding:5px;
+}
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        <div class="main">
+            <h1>Available Phones at ABC Store</h1>
+            <ul id="plus">
+                <li>Apple
+                    <ul>
+                        <li>iPhone 4</li>
+                        <li>iPhone 4s</li>
+                        <li>iPhone 5</li>
+                        <li>iPhone 5s</li>
+                        <li>iPhone 6</li>
+                        <li>iPhone 6 Plus</li>
+                    </ul>
+                </li>
+                <li>Samsung
+                    <ul>
+                        <li>Galaxy S4</li>
+                        <li>Galaxy S5</li>
+                        <li>Galaxy Note 3</li>
+                        <li>Galaxy Note 4</li>
+                    </ul>
+                </li>
+                <li>Huawei
+                    <ul>
+                        <li>Honor 4X</li>
+                        <li>Honor 6</li>
+                        <li>Ascend Y550</li>
+                        <li>Ascend G700</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <hr>`
+        <div class="main">
+            <h1>Skills Development workshop</h1>
+            <p>We will conduct skills development workshops every tuesday.</p>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>9am</th>
+                    <th>10am</th>
+                    <th>11am</th>
+                    <th>12am</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td colspan="2">Geography</td>
+                    <td>Math</td>
+                    <td>Art</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td colspan="3">Skills Development Workshop</td>
+                    <td>Home Ec</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div id="table2" class="main">
+            <h1>Program Schedule</h1>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>ABC</th>
+                    <th>BBC</th>
+                    <th>CNN</th>
+                </tr>
+                <tr>
+                    <td>6pm - 7pm</td>
+                    <td rowspan="2">Movie</td>
+                    <td>Comedy</td>
+                    <td>News</td>
+                </tr>
+                <tr>
+                    <td>7pm - 8pm</td>
+                    <td>Sport</td>
+                    <td>Current Affairs</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div class="main" id="form">
+            <form action="www.google.com" method="post">
+                <fieldset>
+                    <legend>Subscribe Now</legend>
+                    <div><label for="username" class="arrange">Your name: </label>
+                        <input type="text" name="username" id="username">
+                    </div>
+                    <div><label for="email" class="arrange">Your email:</label>
+                        <input type="email" name="userEmail" id="email">
+                    </div>
+                    <div><label class="arrange" for="droplist">Country: </label>
+                        <select name="Country" id="droplist">
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="India">India</option>
+                            <option value="China">China</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span class="arrange">Are you a member? </span>
+                        <label><input type="radio" name="membership" value="y"> Yes </label>
+                        <label><input type="radio" name="membership" value="n"> No</label>
+                    </div>
+                </fieldset>
+                <input type="submit" name="subscribe" value="Subscribe" id="button">
+            </form>
+        </div>
+    </p>
+</body>
+
+</html>
